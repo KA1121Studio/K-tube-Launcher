@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -341,8 +342,33 @@
     @media (max-width: 550px) {
       .glass-card { padding: 1.5rem; }
       .glow-title { font-size: 1.7rem; }
-      .server-btn { padding: 0.6rem 1.2rem; font-size: 1rem; }
+      .server-btn { padding: 0.7rem 1.2rem; font-size: 1rem; }
     }
+.server-btn.vercel-btn {
+  position: relative;
+}
+
+.server-btn.vercel-btn::after {
+  content: "NEW";
+  position: absolute;
+
+  top: -14px;
+  right: -20px;
+
+  background: #ff3b30;
+  color: #fff;
+
+  font-size: 0.85rem;
+  font-weight: 700;
+
+  padding: 5px 14px;
+  border-radius: 999px;
+
+  line-height: 1;
+  box-shadow: 0 4px 12px rgba(255, 59, 48, 0.35);
+
+  z-index: 10;
+}
   </style>
 </head>
 <body>
